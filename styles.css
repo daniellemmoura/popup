@@ -1,7 +1,12 @@
 .popup {
+    display: none;
     position: absolute;
     height: 658px;
     border: 1px solid red;
+}
+
+.popup.show {
+    display: block;
 }
 
 .popup__wrapper {
@@ -12,7 +17,7 @@
 .popup__form {
     display: flex;
     flex-direction: column;
-    background: url(Fundo.png);
+    background: #a21849;
 }
 
 .popup__form__text {
