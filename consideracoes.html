@@ -8,15 +8,17 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css">
-    
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+
     <title>Document</title>
 </head>
+
 <body>
     <main>
         <section>
@@ -28,14 +30,21 @@
                                 <h2 class="popup__form__title__h2">Novidades</h2>
                             </div>
                             <div class="popup__form__description">
-                                <p class="popup__form__description__paragraph">Direto no seu e-mail</p>
+                                <p class="popup__form__description__paragraph">
+                                    Direto no seu e-mail
+                                </p>
                             </div>
                         </div>
                         <form class="form__text">
-                            <input class="form__text__input" type="text" placeholder="Digite seu nome aqui"/>
-                            <span class="spanError"></span>
-                            <input class="form__text__input" type="text" placeholder="Digite seu e-mail">
-                            <input class="form__text__input_button" type="submit" value="Cadastre-se">
+                            <input required class="form__text__input" type="text" placeholder="Digite seu nome aqui" />
+                            <label>Nome</label>
+                            <span class="error"></span>
+
+                            <input required class="form__text__input" type="email" placeholder="Digite seu e-mail" />
+                            <label>E-mail</label>
+                            <span class="error"></span>
+
+                            <input class="form__text__input_button" type="submit" value="Cadastre-se" />
                         </form>
                     </div>
                     <div class="popup__banner">
@@ -47,4 +56,5 @@
     </main>
     <script src="/popup.js"></script>
 </body>
+
 </html>

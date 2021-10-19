@@ -58,6 +58,7 @@
     font-size: 20px;
     line-height: 29px;
     color: #B0AFAF;
+    outline: none;
 }
 
 .form__text__input_button {
@@ -73,6 +74,25 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.form__text__input,
+.form__text__input_button {
+    /* reset appearance */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form__text__input span.error {
+    display: flex;
+    padding: 0;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.form__text__input span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
 }
 
 .popup__banner {
