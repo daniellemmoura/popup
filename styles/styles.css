@@ -57,9 +57,9 @@
     border-radius: 10px;
     font-family: "Brandon Grotesque", sans-serif;
     font-size: 20px;
-    /*line-height: 29px;*/
+    line-height: 29px;
     color: #B0AFAF;
-    /*outline: none;*/
+    outline: none;
     border-style: none;
 }
 
@@ -84,7 +84,8 @@
     border-style: none;
 }
 
-.form__text__input,
+.form__text__input__email,
+.form__text__input__name,
 .form__text__input_button {
     /* reset appearance */
     -moz-appearance: none;
@@ -92,13 +93,15 @@
     appearance: none;
 }
 
-.form__text__input span.error {
+.form__text__input__name span.error,
+.form__text__input__email span.error {
     display: flex;
     position: relative;
     background-color: rgba(255, 0, 0, 0.2);
 }
 
-.form__text__input span.error.active {
+.form__text__input__email span.error.active,
+.form__text__input__name span.error.active {
     border: 1px solid red;
     padding: 0.4em;
 }
