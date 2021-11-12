@@ -13,8 +13,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/styles.css" />
+
 
     <title>Document</title>
 </head>
@@ -36,12 +41,12 @@
                             </div>
                         </div>
                         <form class="form__text">
-                            <input required class="form__text__input__name" type="text" />
-                            <label class="form__text__label_name">Nome</label>
+                            <input required class="form__text__input__name" type="text" placeholder="Digite seu nome aqui"/>
+                            <label class="form__text__label_name" hidden>Nome</label>
                             <span class="error"></span>
 
-                            <input required class="form__text__input__email" type="email" />
-                            <label class="form__text__label_email">E-mail</label>
+                            <input required class="form__text__input__email" type="email" placeholder="Digite seu e-mail"/>
+                            <label class="form__text__label_email" hidden>E-mail</label>
                             <span class="error"></span>
 
                             <input class="form__text__input_button" type="submit" value="Cadastre-se" />
